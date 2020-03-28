@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Fadfadly</string>
+    <string name="Login">تسجيل الدخول</string>
+    <string name="Username">اسم المستخدم</string>
+    <string name="password">كلمه السر</string>
+    <string name="Email">البريد الالكتروني</string>
+    <string name="Loading">تحميل</string>
+    <string name="Signup">إنشاء حساب</string>
+    <string name="age">العمر</string>
+    <string name="gender">الجنس</string>
+    <string name="لا">لا</string>
+    <string name="ربما">ربما</string>
+    <string name="نعم">نعم</string>
+    <string name="self1">هل التعامل مع الأخرين والذين لا تعرفهم صعب؟</string>
+</resources>
