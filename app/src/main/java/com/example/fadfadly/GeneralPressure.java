@@ -1,6 +1,7 @@
 package com.example.fadfadly;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -15,10 +16,10 @@ import android.widget.RadioGroup;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Self1 extends Fragment {
-View view;
+public class GeneralPressure extends Fragment {
 
-    public Self1() {
+View view;
+    public GeneralPressure() {
         // Required empty public constructor
     }
 
@@ -27,16 +28,25 @@ View view;
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view= inflater.inflate(R.layout.fragment_self1, container, false);
+        view= inflater.inflate(R.layout.fragment_general_pressure, container, false);
         RadioGroup radioGroup = (RadioGroup)view.findViewById(R.id.radios);
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
         {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 // checkedId is the RadioButton selected
-                FragmentTransaction fr=getFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container,new Self2());
-                fr.commit();
+
+
+                if(checkedId==R.id.no)
+                // Log.d(TAG, "A");
+                { Intent intent = new Intent(getActivity(), MainActivity.class);
+                    startActivity(intent);
+                }
+                else if(checkedId==R.id.yes)
+                //  Log.d(TAG, "B");
+                { FragmentTransaction fr=getFragmentManager().beginTransaction();
+                    fr.replace(R.id.fragment_container,new Pressure1());
+                    fr.commit();}
             }
         });
 

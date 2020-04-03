@@ -15,10 +15,11 @@ import android.widget.RadioGroup;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Self1 extends Fragment {
-View view;
+public class Self3 extends Fragment {
+    View view;
 
-    public Self1() {
+
+    public Self3() {
         // Required empty public constructor
     }
 
@@ -27,7 +28,7 @@ View view;
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view= inflater.inflate(R.layout.fragment_self1, container, false);
+        view= inflater.inflate(R.layout.fragment_self3, container, false);
         RadioGroup radioGroup = (RadioGroup)view.findViewById(R.id.radios);
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
         {
@@ -35,7 +36,7 @@ View view;
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 // checkedId is the RadioButton selected
                 FragmentTransaction fr=getFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container,new Self2());
+                fr.replace(R.id.fragment_container,new Self4());
                 fr.commit();
             }
         });

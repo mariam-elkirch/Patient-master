@@ -196,7 +196,7 @@
                 android:paddingEnd="70dp"
                 android:background="@drawable/rounded_button"
                 android:text="submit"
-                android:onClick="onsubmit"
+
                 android:textColor="@color/colorAccent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

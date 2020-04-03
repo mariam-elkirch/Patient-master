@@ -117,7 +117,7 @@ public class SignupActivity extends BaseActivity implements View.OnClickListener
                         public void onComplete(@NonNull Task task) {
                             DataUtil.dbUser=user;
                             hideProgressDialog();
-                          //  startActivity(new Intent(SignupActivity.this,LoginActivity.class));
+                           startActivity(new Intent(SignupActivity.this,Assessment.class));
                             finish();
 
                         }
@@ -157,8 +157,9 @@ public class SignupActivity extends BaseActivity implements View.OnClickListener
 
 
     }
+    /*
     public void onsubmit(View view) {
-        Intent intent=new Intent(this,LoginActivity.class);
+        Intent intent=new Intent(this,Assessment.class);
         startActivity(intent);
-    }
+    }*/
 }
