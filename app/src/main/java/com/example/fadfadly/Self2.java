@@ -37,6 +37,16 @@ View view;
                 FragmentTransaction fr=getFragmentManager().beginTransaction();
                 fr.replace(R.id.fragment_container,new Self3());
                 fr.commit();
+                if(checkedId==R.id.first)
+                {
+               Self1.list.add(3);
+                }
+                else if(checkedId==R.id.second){
+                    Self1.list.add(2);
+                }
+                else if(checkedId==R.id.third){
+                    Self1.list.add(1);
+                }
             }
         });
 

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,10 +38,40 @@ View view;
                 FragmentTransaction fr=getFragmentManager().beginTransaction();
                 fr.replace(R.id.fragment_container,new Family1());
                 fr.commit();
+                if(checkedId==R.id.first)
+                {
+                    Self1.list.add(2);
+                }
+                else if(checkedId==R.id.second){
+                    Self1.list.add(3);
+                }
+                else if(checkedId==R.id.third){
+                    Self1.list.add(1);
+                }
+                        //print List
+                for (int i=0;i < Self1.list.size();i++)
+                {
+                    Log.i("Value of element "+i, String.valueOf(Self1.list.get(i)));
+
+                }
+                //Convert List to array
+                Integer[] arrSelf = Self1.list.toArray(new Integer[0]);
+                //print Array
+                for (Integer x : arrSelf)
+                    Log.i("Array", x+"");
+
+
+
+
+
+
+
             }
         });
 
+
         return view;
+
     }
 
 }

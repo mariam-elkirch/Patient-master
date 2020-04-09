@@ -1,6 +1,7 @@
 package com.example.fadfadly;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -11,13 +12,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RadioGroup;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class Self1 extends Fragment {
 View view;
-
+    static final List<Integer> list = new ArrayList<Integer>();
     public Self1() {
         // Required empty public constructor
     }
@@ -27,6 +31,7 @@ View view;
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
         view= inflater.inflate(R.layout.fragment_self1, container, false);
         RadioGroup radioGroup = (RadioGroup)view.findViewById(R.id.radios);
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
@@ -37,7 +42,21 @@ View view;
                 FragmentTransaction fr=getFragmentManager().beginTransaction();
                 fr.replace(R.id.fragment_container,new Self2());
                 fr.commit();
+                if(checkedId==R.id.first)
+                {
+                    list.add(1);
+                }
+                else if(checkedId==R.id.second){
+                    list.add(2);
+                }
+                else if(checkedId==R.id.third){
+                    list.add(3);
+                }
+
             }
+
+
+
         });
 
         return view;
