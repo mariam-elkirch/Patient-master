@@ -21,7 +21,7 @@ import java.util.List;
  */
 public class Self1 extends Fragment {
 View view;
-    static final List<Integer> list = new ArrayList<Integer>();
+    static final List<Double> list = new ArrayList<Double>();
     public Self1() {
         // Required empty public constructor
     }
@@ -44,13 +44,13 @@ View view;
                 fr.commit();
                 if(checkedId==R.id.first)
                 {
-                    list.add(1);
+                    list.add(1.0);
                 }
                 else if(checkedId==R.id.second){
-                    list.add(2);
+                    list.add(2.0);
                 }
                 else if(checkedId==R.id.third){
-                    list.add(3);
+                    list.add(3.0);
                 }
 
             }

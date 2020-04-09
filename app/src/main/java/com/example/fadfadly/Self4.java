@@ -39,13 +39,13 @@ View view;
                 fr.commit();
                 if(checkedId==R.id.first)
                 {
-                    Self1.list.add(3);
+                    Self1.list.add(3.0);
                 }
                 else if(checkedId==R.id.second){
-                    Self1.list.add(2);
+                    Self1.list.add(2.0);
                 }
                 else if(checkedId==R.id.third){
-                    Self1.list.add(1);
+                    Self1.list.add(1.0);
                 }
             }
         });
