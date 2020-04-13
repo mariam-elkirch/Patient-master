@@ -11,12 +11,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RadioGroup;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class Friends1 extends Fragment {
-
+    static final List<Double> list = new ArrayList<Double>();
     View view;
     public Friends1() {
         // Required empty public constructor
@@ -37,6 +40,26 @@ public class Friends1 extends Fragment {
                 FragmentTransaction fr=getFragmentManager().beginTransaction();
                 fr.replace(R.id.fragment_container,new Friends2());
                 fr.commit();
+                if(checkedId==R.id.first)
+                {
+                    Friends1.list.add(3.0);
+                }
+                else if(checkedId==R.id.second){
+                    Friends1.list.add(2.0);
+                }
+                else if(checkedId==R.id.third){
+                    Friends1.list.add(1.0);
+                }
+
+                
+
+
+
+
+
+
+
+
             }
         });
 

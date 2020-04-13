@@ -11,12 +11,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RadioGroup;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class SingleLoveOutLayer extends Fragment {
-
+    static final List<Double> list = new ArrayList<Double>();
 View view;
     public SingleLoveOutLayer() {
         // Required empty public constructor
@@ -45,7 +48,16 @@ View view;
                 //  Log.d(TAG, "B");
                 { FragmentTransaction fr=getFragmentManager().beginTransaction();
                     fr.replace(R.id.fragment_container,new SingleTwoCases());
-                    fr.commit();}
+                    fr.commit();
+              list.add(0,-1.0);
+                    list.add(1,-1.0);
+                  list.add(2,-1.0);
+                   list.add(3,-1.0);
+
+
+
+
+                }
             }
         });
 

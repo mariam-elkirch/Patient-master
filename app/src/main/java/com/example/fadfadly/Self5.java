@@ -69,7 +69,7 @@ View view;
                         //print List
                 for (int i=0;i < Self1.list.size();i++)
                 {
-                    Log.i("Value of element "+i, String.valueOf(Self1.list.get(i)));
+                    Log.i("Value of self element "+i, String.valueOf(Self1.list.get(i)));
 
                 }
 
@@ -97,7 +97,7 @@ View view;
 
                 AssetManager assetManager =getContext().getAssets() ;
                 try {
-                    mClassifier = (Classifier) weka.core.SerializationHelper.read(assetManager.open("Self.model"));
+                    mClassifier = (Classifier) weka.core.SerializationHelper.read(assetManager.open("self3.model"));
 
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -105,7 +105,7 @@ View view;
                     // Weka "catch'em all!"
                     e.printStackTrace();
                 }
-              Log.i("model load","Model Loaded");
+              Log.i("model self load","Model self Loaded");
                 if(mClassifier==null){
                     Log.i("model not load","Model not Loaded");
                     return;
@@ -119,7 +119,7 @@ View view;
                     {
                         add("bad"); // cls nr 1
                         add("good"); // cls nr 2
-                        add("excel"); // cls nr 3
+                        add("excellent"); // cls nr 3
                     }
                 };
                 ArrayList<Attribute> attributeList = new ArrayList<Attribute>(2) {
@@ -130,7 +130,7 @@ View view;
                         add(attributePetalWidth);
                         add(attributePetalWidth2);
 
-                        Attribute attributeClass = new Attribute("@@class@@", classes);
+                        Attribute attributeClass = new Attribute("target", classes);
                         add(attributeClass);
                     }
                 };
@@ -156,7 +156,7 @@ View view;
                 try {
                     double result = mClassifier.classifyInstance(newInstance);
                     String className = classes.get(new Double(result).intValue());
-                    String msg =  ", predicted: " + className ;
+                    String msg =  ", self predicted: " + className ;
                     Log.i("WEKA_TEST", msg);
 
                 } catch (Exception e) {

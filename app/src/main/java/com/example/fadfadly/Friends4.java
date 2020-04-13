@@ -37,6 +37,17 @@ public class Friends4 extends Fragment {
                 FragmentTransaction fr=getFragmentManager().beginTransaction();
                 fr.replace(R.id.fragment_container,new Friends5());
                 fr.commit();
+                if(checkedId==R.id.first)
+                {
+                    Friends1.list.add(3.0);
+                }
+                else if(checkedId==R.id.second){
+                    Friends1.list.add(2.0);
+                }
+                else if(checkedId==R.id.third){
+                    Friends1.list.add(1.0);
+                }
+
             }
         });
 

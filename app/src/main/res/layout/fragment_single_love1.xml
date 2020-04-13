@@ -52,7 +52,7 @@
                 android:orientation="vertical" >
 
                 <RadioButton
-                    android:id="@+id/first"
+                    android:id="@+id/yes"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
@@ -65,21 +65,10 @@
                     android:textSize="20dip"
                     android:gravity="right"/>
 
-                <RadioButton
-                    android:id="@+id/second"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
 
-                    android:button="@null"
-                    android:drawablePadding="30dp"
-                    android:drawableRight="@android:drawable/btn_radio"
-                    android:text="@string/ربما"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:gravity="right"/>
 
                 <RadioButton
-                    android:id="@+id/third"
+                    android:id="@+id/no"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
 

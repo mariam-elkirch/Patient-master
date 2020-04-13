@@ -13,12 +13,15 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RadioGroup;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class SingleOrNotOutLayer extends Fragment {
-
+    static final List<Double> list = new ArrayList<Double>();
 View view;
     public SingleOrNotOutLayer() {
         // Required empty public constructor
@@ -50,7 +53,13 @@ View view;
                   //  Log.d(TAG, "B");
                 { FragmentTransaction fr=getFragmentManager().beginTransaction();
                     fr.replace(R.id.fragment_container,new Married1());
-                    fr.commit();}
+                    fr.commit();
+              //  list.add(0,-1.0);list.add(1,-1.0);list.add(2,-1.0);list.add(3,-1.0);list.add(4,-1.0);list.add(5,-1.0);
+list.add(-1.0);                    list.add(-1.0);list.add(-1.0);    list.add(-1.0);  list.add(-1.0); list.add(-1.0);
+
+
+
+                }
             }
         });
 
