@@ -35,17 +35,17 @@ View view;
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 // checkedId is the RadioButton selected
-                Intent intent = new Intent(getActivity(), MainActivity.class);
+                Intent intent = new Intent(getActivity(), Filtering.class);
                 startActivity(intent);
                 if(checkedId==R.id.first)
                 {
-                    SingleOrNotOutLayer. list.add(3.0);
+                    General1.list.add(3.0);
                 }
                 else if(checkedId==R.id.second){
-                    SingleOrNotOutLayer. list.add(2.0);
+                    General1. list.add(2.0);
                 }
                 else if(checkedId==R.id.third){
-                    SingleOrNotOutLayer. list.add(1.0);
+                    General1. list.add(1.0);
                 }
             }
         });

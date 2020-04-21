@@ -76,5 +76,16 @@
     <string name="generalpressure">هل أنت تحت ضغط باستمرار؟ </string>
     <string name="pressure1">هل حاولت علاجه او تغييره؟</string>
     <string name="pressure2">هل حاولت تقبله؟  </string>
+    <string name="now">شكرا. الان يمكنك ان  تختار من بين الاطباء المناسبون لحالتك</string>
+    <string name="Next">التالي</string>
+    <string name="help"> تشعر أنك تحتاج المساعده في اي جزء من الأجزاء الاتيه</string>
+    <string name="sel">لا تستطيع ان تحب نفسك</string>
+    <string name="emot">عائليا</string>
+    <string name="fam">عائليا</string>
+    <string name="fri">لديك مشكله مع أصدقائك</string>
+    <string name="em">عاطفيا</string>
+    <string name="wo">دراسيا أو عمليا</string>
+    <string name="lo">تفتقد أشخاص تحبهم</string>
+    <string name="ge">شعورك العام ليس جيد</string>
 
 </resources>

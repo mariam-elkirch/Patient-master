@@ -39,13 +39,13 @@ public class Pressure1 extends Fragment {
                 fr.commit();
                 if(checkedId==R.id.first)
                 {
-                    SingleOrNotOutLayer. list.add(3.0);
+                    General1. list.add(3.0);
                 }
                 else if(checkedId==R.id.second){
-                    SingleOrNotOutLayer. list.add(2.0);
+                    General1. list.add(2.0);
                 }
                 else if(checkedId==R.id.third){
-                    SingleOrNotOutLayer. list.add(1.0);
+                    General1. list.add(1.0);
                 }
             }
         });

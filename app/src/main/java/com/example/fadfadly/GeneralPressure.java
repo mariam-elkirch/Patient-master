@@ -39,7 +39,7 @@ View view;
 
                 if(checkedId==R.id.no)
                 // Log.d(TAG, "A");
-                { Intent intent = new Intent(getActivity(), MainActivity.class);
+                { Intent intent = new Intent(getActivity(), Filtering.class);
                     startActivity(intent);
                     General1.list.add(3.0);
                     General1.list.add(-1.0); General1.list.add(-1.0);
