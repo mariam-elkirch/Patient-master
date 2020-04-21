@@ -39,10 +39,10 @@ View view;
                 fr.commit();
                 if(checkedId==R.id.yes)
                 {
-                   SingleLoveOutLayer.list.add(0,0.0);
+                    SingleOrNotOutLayer.list.add(0,0.0);
                 }
                 else if(checkedId==R.id.no){
-                    SingleLoveOutLayer.list.add(0,2.0);
+                    SingleOrNotOutLayer.list.add(0,2.0);
                 }
 
 

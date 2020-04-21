@@ -19,7 +19,7 @@ import java.util.List;
  * A simple {@link Fragment} subclass.
  */
 public class SingleLoveOutLayer extends Fragment {
-    static final List<Double> list = new ArrayList<Double>();
+
 View view;
     public SingleLoveOutLayer() {
         // Required empty public constructor
@@ -49,10 +49,10 @@ View view;
                 { FragmentTransaction fr=getFragmentManager().beginTransaction();
                     fr.replace(R.id.fragment_container,new SingleTwoCases());
                     fr.commit();
-              list.add(0,-1.0);
-                    list.add(1,-1.0);
-                  list.add(2,-1.0);
-                   list.add(3,-1.0);
+              SingleOrNotOutLayer.list.add(0,-1.0);
+                    SingleOrNotOutLayer.list.add(1,-1.0);
+                    SingleOrNotOutLayer.list.add(2,-1.0);
+                    SingleOrNotOutLayer.list.add(3,-1.0);
 
 
 

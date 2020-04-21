@@ -60,11 +60,12 @@ View view;
                 else if(checkedId==R.id.third){
                     SingleOrNotOutLayer. list.add(1.0);
                 }
-                for (int i=0;i < SingleOrNotOutLayer.list.size();i++)
+              /*  for (int i=0;i < SingleOrNotOutLayer.list.size();i++)
                 {
-                    Log.i("Value of emo element "+i, String.valueOf(SingleOrNotOutLayer.list.get(i)));
+                    Log.i("Value of married element "+i, String.valueOf(SingleOrNotOutLayer.list.get(i)));
 
-                }
+                }*/
+                /*
                 double m1=SingleOrNotOutLayer.list.get(0);
                 double m2=SingleOrNotOutLayer.list.get(1);
                 double m3=SingleOrNotOutLayer.list.get(2);
@@ -181,7 +182,7 @@ View view;
 
 
 
-
+*/
 
 
 
@@ -193,7 +194,7 @@ View view;
 
         return view;
     }
-    public class Sample {
+  /*  public class Sample {
 
         public double [] features;
 
@@ -209,5 +210,5 @@ View view;
 
                     ", feat: " + Arrays.toString(features);
         }
-    }
+    }*/
 }

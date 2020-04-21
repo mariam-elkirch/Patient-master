@@ -11,6 +11,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RadioGroup;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -22,7 +25,7 @@ View view;
         // Required empty public constructor
     }
 
-
+    static final List<Double> list = new ArrayList<Double>();
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -37,6 +40,16 @@ View view;
                 FragmentTransaction fr=getFragmentManager().beginTransaction();
                 fr.replace(R.id.fragment_container,new Loss2());
                 fr.commit();
+                if(checkedId==R.id.first)
+                {
+                    list.add(1.0);
+                }
+                else if(checkedId==R.id.second){
+                     list.add(2.0);
+                }
+                else if(checkedId==R.id.third){
+                    list.add(3.0);
+                }
             }
         });
 

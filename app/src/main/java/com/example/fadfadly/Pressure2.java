@@ -37,6 +37,16 @@ View view;
                 // checkedId is the RadioButton selected
                 Intent intent = new Intent(getActivity(), MainActivity.class);
                 startActivity(intent);
+                if(checkedId==R.id.first)
+                {
+                    SingleOrNotOutLayer. list.add(3.0);
+                }
+                else if(checkedId==R.id.second){
+                    SingleOrNotOutLayer. list.add(2.0);
+                }
+                else if(checkedId==R.id.third){
+                    SingleOrNotOutLayer. list.add(1.0);
+                }
             }
         });
 

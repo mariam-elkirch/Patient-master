@@ -39,13 +39,13 @@ View view;
                 fr.commit();
                 if(checkedId==R.id.first)
                 {
-                    SingleLoveOutLayer. list.add(3,3.0);
+                    SingleOrNotOutLayer.list.add(3,3.0);
                 }
                 else if(checkedId==R.id.second){
-                    SingleLoveOutLayer. list.add(3,1.0);
+                    SingleOrNotOutLayer.list.add(3,1.0);
                 }
                 else if(checkedId==R.id.third){
-                    SingleLoveOutLayer. list.add(3,0.0);
+                    SingleOrNotOutLayer.list.add(3,0.0);
                 }
             }
         });

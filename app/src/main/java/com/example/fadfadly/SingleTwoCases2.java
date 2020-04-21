@@ -52,26 +52,28 @@ View view;
                 fr.commit();
                 if(checkedId==R.id.first)
                 {
-                    SingleLoveOutLayer. list.add(5,2.0);
+                    SingleOrNotOutLayer.list.add(5,2.0);
                 }
                 else if(checkedId==R.id.second){
-                    SingleLoveOutLayer. list.add(5,3.0);
+                    SingleOrNotOutLayer.list.add(5,3.0);
                 }
                 else if(checkedId==R.id.third){
-                    SingleLoveOutLayer. list.add(5,1.0);
+                    SingleOrNotOutLayer.list.add(5,1.0);
                 }
-                SingleLoveOutLayer.list.add(6,-1.0);
-                SingleLoveOutLayer.list.add(7,-1.0);
-                SingleLoveOutLayer.list.add(8,-1.0);
+                SingleOrNotOutLayer.list.add(6,-1.0);
+                SingleOrNotOutLayer.list.add(7,-1.0);
+                SingleOrNotOutLayer.list.add(8,-1.0);
 
-                SingleLoveOutLayer.list.add(9,-1.0);
-                SingleLoveOutLayer.list.add(10,-1.0);
-                SingleLoveOutLayer.list.add(11,-1.0);
-                for (int i=0;i < SingleLoveOutLayer.list.size();i++)
+                SingleOrNotOutLayer.list.add(9,-1.0);
+                SingleOrNotOutLayer.list.add(10,-1.0);
+                SingleOrNotOutLayer.list.add(11,-1.0);
+            /*    for (int i=0;i <    SingleOrNotOutLayer.list.size();i++)
                 {
-                    Log.i("Value of   single element "+i, String.valueOf( SingleLoveOutLayer.list.get(i)));
+                    Log.i("Value of   single element "+i, String.valueOf(    SingleOrNotOutLayer.list.get(i)));
 
-                }
+                }*/
+                /*
+
                 double m1= SingleLoveOutLayer.list.get(0);
                 double m2= SingleLoveOutLayer.list.get(1);
                 double m3= SingleLoveOutLayer.list.get(2);
@@ -188,7 +190,7 @@ View view;
 
 
 
-
+*/
 
 
 
@@ -200,7 +202,7 @@ View view;
 
         return view;
     }
-    public class Sample {
+ /*   public class Sample {
 
         public double [] features;
 
@@ -216,5 +218,5 @@ View view;
 
                     ", feat: " + Arrays.toString(features);
         }
-    }
+    }*/
 }

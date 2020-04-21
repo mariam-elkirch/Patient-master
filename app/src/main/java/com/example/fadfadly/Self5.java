@@ -39,7 +39,7 @@ View view;
     }
     private Classifier mClassifier = null;
 
-    TextView mTextViewSamples = null;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

@@ -41,12 +41,21 @@ View view;
                 // Log.d(TAG, "A");
                 { Intent intent = new Intent(getActivity(), MainActivity.class);
                     startActivity(intent);
+                    General1.list.add(3.0);
+                    General1.list.add(-1.0); General1.list.add(-1.0);
                 }
                 else if(checkedId==R.id.yes)
                 //  Log.d(TAG, "B");
                 { FragmentTransaction fr=getFragmentManager().beginTransaction();
                     fr.replace(R.id.fragment_container,new Pressure1());
-                    fr.commit();}
+                    fr.commit();
+                    General1.list.add(1.0);
+
+
+                }
+
+
+
             }
         });
 
