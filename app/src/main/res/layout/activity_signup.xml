@@ -59,12 +59,12 @@
                 android:id="@+id/username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
                 android:layout_marginTop="10dp"
                 android:text="@string/Username"
                 android:textSize="20dp"
                 android:textColor="@color/colorPrimaryDark"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/title" />
 
             <EditText
@@ -75,12 +75,13 @@
                 android:layout_marginEnd="10dp"
                 android:lines="1"
                 android:textSize="16dp"
-                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
                 app:layout_constraintBottom_toBottomOf="@id/username"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/username"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/username"
                 app:layout_constraintTop_toTopOf="@id/username"
-                tools:text="noha" />
+                tools:text="مريم" />
+
             <TextView
                 android:id="@+id/age"
                 android:layout_width="wrap_content"
@@ -89,7 +90,7 @@
                 android:text="@string/age"
                 android:textSize="20dp"
                 android:textColor="@color/colorPrimaryDark"
-                app:layout_constraintStart_toStartOf="@id/username"
+                app:layout_constraintEnd_toEndOf="@id/username"
                 app:layout_constraintTop_toBottomOf="@id/username" />
 
             <EditText
@@ -98,114 +99,118 @@
                 android:layout_height="wrap_content"
                 android:lines="1"
                 android:textSize="16dp"
-                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
                 app:layout_constraintBottom_toBottomOf="@id/age"
                 app:layout_constraintEnd_toEndOf="@id/username_text"
                 app:layout_constraintStart_toStartOf="@id/username_text"
                 app:layout_constraintTop_toTopOf="@id/age"
-                tools:text="12" />
+                tools:text="14" />
 
 
-            <TextView
-                android:id="@+id/email"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:text="@string/Email"
-                android:textSize="20dp"
-                android:textColor="@color/colorPrimaryDark"
-                app:layout_constraintStart_toStartOf="@id/username"
-                app:layout_constraintTop_toBottomOf="@id/age" />
+                      <TextView
+                          android:id="@+id/email"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="12dp"
+                          android:text="@string/Email"
+                          android:textSize="20dp"
+                          android:textColor="@color/colorPrimaryDark"
+                          app:layout_constraintEnd_toEndOf="@id/username"
+                          app:layout_constraintTop_toBottomOf="@id/age" />
 
-            <EditText
-                android:id="@+id/email_text"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:lines="1"
-                android:textSize="16dp"
-                android:paddingStart="10dp"
-                app:layout_constraintBottom_toBottomOf="@id/email"
-                app:layout_constraintEnd_toEndOf="@id/username_text"
-                app:layout_constraintStart_toStartOf="@id/username_text"
-                app:layout_constraintTop_toTopOf="@id/email"
-                tools:text="abc@yahoo.fr" />
-            <TextView
-                android:id="@+id/password"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:text="@string/password"
-                android:textSize="20dp"
-                android:textColor="@color/colorPrimaryDark"
-                app:layout_constraintStart_toStartOf="@id/username"
-                app:layout_constraintTop_toBottomOf="@id/email" />
+                      <EditText
+                          android:id="@+id/email_text"
+                          android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:lines="1"
+                          android:textSize="16dp"
+                          android:paddingEnd="10dp"
+                          app:layout_constraintBottom_toBottomOf="@id/email"
+                          app:layout_constraintEnd_toEndOf="@id/username_text"
+                          app:layout_constraintStart_toStartOf="@id/username_text"
+                          app:layout_constraintTop_toTopOf="@id/email"
+                          tools:text="abc@yahoo.fr" />
 
-            <EditText
-                android:id="@+id/password_text"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:lines="1"
-                android:textSize="16dp"
-                android:paddingStart="10dp"
-                app:layout_constraintBottom_toBottomOf="@id/password"
-                app:layout_constraintEnd_toEndOf="@id/username_text"
-                app:layout_constraintStart_toStartOf="@id/username_text"
-                app:layout_constraintTop_toTopOf="@id/password"
-                tools:text="noha" />
-            <TextView
-                android:id="@+id/gender"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:text="@string/gender"
-                android:textSize="20dp"
-                android:textColor="@color/colorPrimaryDark"
-                app:layout_constraintStart_toStartOf="@id/username"
-                app:layout_constraintTop_toBottomOf="@id/password" />
+                     <TextView
+                         android:id="@+id/password"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
 
-            <RadioGroup
-                android:id="@+id/radio_group"
-                app:layout_constraintStart_toStartOf="@id/username_text"
-                app:layout_constraintTop_toTopOf="@id/gender"
-                app:layout_constraintBottom_toBottomOf="@id/gender"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                         android:layout_marginTop="12dp"
+                         android:text="@string/password"
+                         android:textSize="20dp"
+                         app:layout_constraintEnd_toEndOf="@id/username"
+                         android:textColor="@color/colorPrimaryDark"
 
-                <RadioButton android:id="@+id/male"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:buttonTint="@color/colorPrimaryDark"
-                    android:text="Male"
-                    />
+                         app:layout_constraintTop_toBottomOf="@id/email" />
 
-                <RadioButton android:id="@+id/female"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:buttonTint="@color/colorPrimaryDark"
-                    android:text="Female" />
-            </RadioGroup>
+                     <EditText
+                         android:id="@+id/password_text"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:lines="1"
+                         android:textSize="16dp"
+                         android:paddingStart="10dp"
+                         app:layout_constraintBottom_toBottomOf="@id/password"
+                         app:layout_constraintEnd_toEndOf="@id/username_text"
+                         app:layout_constraintStart_toStartOf="@id/username_text"
+                         app:layout_constraintTop_toTopOf="@id/password"
+                         tools:text="noha" />
+                     <TextView
+                         android:id="@+id/gender"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="12dp"
+                         android:text="@string/gender"
+                         android:textSize="20dp"
+                         android:textColor="@color/colorPrimaryDark"
+                         app:layout_constraintEnd_toEndOf="@id/username"
+                         app:layout_constraintTop_toBottomOf="@id/password" />
 
-            <Button
-                android:id="@+id/submit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="30dp"
-                android:paddingStart="70dp"
-                android:paddingEnd="70dp"
-                android:background="@drawable/rounded_button"
-                android:text="submit"
+                     <RadioGroup
+                         android:id="@+id/radio_group"
+                         app:layout_constraintEnd_toEndOf="@id/username_text"
+                         app:layout_constraintTop_toTopOf="@id/gender"
+                         app:layout_constraintBottom_toBottomOf="@id/gender"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:orientation="horizontal">
 
-                android:textColor="@color/colorAccent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/gender"
-                app:layout_constraintBottom_toBottomOf="parent"
-                />
+                         <RadioButton android:id="@+id/male"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:buttonTint="@color/colorPrimaryDark"
+                             android:text="@string/male"
+                             />
+
+                         <RadioButton android:id="@+id/female"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+
+                             android:buttonTint="@color/colorPrimaryDark"
+                             android:text="@string/female" />
+                     </RadioGroup>
+
+                     <Button
+                         android:id="@+id/submit"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="8dp"
+                         android:layout_marginBottom="30dp"
+                         android:paddingStart="70dp"
+                         android:paddingEnd="70dp"
+                         android:background="@drawable/rounded_button"
+                         android:text="submit"
+
+                         android:textColor="@color/colorAccent"
+                         app:layout_constraintEnd_toEndOf="parent"
+                         app:layout_constraintStart_toStartOf="parent"
+                         app:layout_constraintTop_toBottomOf="@id/gender"
+                         app:layout_constraintBottom_toBottomOf="parent"
+                         />
 
 
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+                 </androidx.constraintlayout.widget.ConstraintLayout>
+             </androidx.cardview.widget.CardView>
+         </androidx.constraintlayout.widget.ConstraintLayout>

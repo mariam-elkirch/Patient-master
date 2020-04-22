@@ -87,5 +87,7 @@
     <string name="wo">دراسيا أو عمليا</string>
     <string name="lo">تفتقد أشخاص تحبهم</string>
     <string name="ge">شعورك العام ليس جيد</string>
+    <string name="male">ذكر</string>
+    <string name="female">انثي</string>
 
 </resources>

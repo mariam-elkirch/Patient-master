@@ -67,32 +67,34 @@ public class SignupActivity extends BaseActivity implements View.OnClickListener
         if (view.getId() == R.id.submit) {
             String EmailText=emailText.getText().toString();
             String PasswordText=passwordText.getText().toString();
-            String usernameText=username.getText().toString();
-            String ageText=age.getText().toString();
+            String UsernameText=usernameText.getText().toString();
+            String AgeText=ageText.getText().toString();
 
             //male, female
-            if(usernameText.trim().isEmpty()){
-                username.setError("requried");
+            //male, female
+            if(UsernameText.trim().isEmpty()){
+                usernameText.setError("required");
                 return;
             }
-            if(ageText.trim().isEmpty()){
-                age.setError("requried");
+            if(AgeText.trim().isEmpty()){
+                ageText.setError("required");
                 return;
             }
             if(EmailText.trim().isEmpty()){
-                email.setError("requried");
+                emailText.setError("required");
                 return;
             }
             if(PasswordText.trim().isEmpty()){
-                password.setError("requried");
+                passwordText.setError("required");
                 return;
             }
             //authontification
             user=new User();
-            user.setName(usernameText);
+            user.setName(UsernameText);
             user.setEmail(EmailText);
-            user.setAge(ageText);
+            user.setAge(AgeText);
             user.setGender(gender);
+
 
             // user.setId(DataUtil.user.getUid());
             FirebaseAuth auth=FirebaseAuth.getInstance();
