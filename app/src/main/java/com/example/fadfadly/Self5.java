@@ -39,7 +39,7 @@ View view;
     }
     private Classifier mClassifier = null;
 
-
+    static final List<String> list = new ArrayList<String>();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -156,9 +156,10 @@ View view;
                 try {
                     double result = mClassifier.classifyInstance(newInstance);
                     String className = classes.get(new Double(result).intValue());
+
                     String msg =  ", self predicted: " + className ;
                     Log.i("WEKA_TEST", msg);
-
+                    list.add(0,className+"self");
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

@@ -30,19 +30,36 @@ public class Filtering extends AppCompatActivity {
         RadioGroup rg = (RadioGroup) findViewById(R.id.radios);
         rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
+
+
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-              /*  switch(checkedId)
+               switch(checkedId)
                 {
-                    case R.id.male:
+                    case R.id.sel:
+                        Self5.list.add(7,"نفسك");
+                        break;
+                    case R.id.second:
+                        Self5.list.add(7,"عائليا");
+                        break;
+                    case R.id.third:
+                        Self5.list.add(7,"الاصدقاء");
+                        break;
+                    case R.id.fourth:
+                        Self5.list.add(7,"عاطفيا");
+                        break;
+                    case R.id.fifth:
+                        Self5.list.add(7,"الدراسه او العمل");
+                        break;
+                    case R.id.six:
+                        Self5.list.add(7,"الفقدان");
+                        break;
 
-                        break;
-                    case R.id.female:
 
+                    case R.id.seven:
+
+                        Self5.list.add(7,"الشعور العام");
                         break;
-                    case R.id.other:
-                        // TODO Something
-                        break;
-                }*/
+                }
 
                 //Do something
 
@@ -157,21 +174,26 @@ public class Filtering extends AppCompatActivity {
                     String className = classes.get(new Double(result).intValue());
                     String msg = ", general predicted: " + className;
                     Log.i("WEKA_TEST", msg);
+                    Self5.list.add(6,className+"general");
 
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
+            /*    Intent intent=new Intent(Filtering.this,Filtering2.class);
 
-
-                startActivity(new Intent(Filtering.this,Filtering2.class));
+                startActivity(intent);*/
 
             }
         });
     }
 
+    public void onfil(View view) {
 
+        Intent intent=new Intent(this,Filtering2.class);
 
+        startActivity(intent);
 
+    }
 
 
     public class Sample {

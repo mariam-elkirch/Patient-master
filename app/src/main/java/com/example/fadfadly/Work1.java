@@ -173,6 +173,7 @@ View view;
                     double result = mClassifier.classifyInstance(newInstance);
                     String className = classes.get(new Double(result).intValue());
                     String msg =  ", emo predicted: " + className ;
+                    Self5.list.add(3,className+"emotion");
                     Log.i("WEKA_TEST", msg);
 
                 } catch (Exception e) {

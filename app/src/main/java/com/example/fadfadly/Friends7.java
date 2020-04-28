@@ -151,6 +151,7 @@ View view;
                     String className = classes.get(new Double(result).intValue());
                     String msg =  ", friends predicted: " + className ;
                     Log.i("WEKA_TEST", msg);
+                    Self5.list.add(2,className+"friends");
 
                 } catch (Exception e) {
                     e.printStackTrace();

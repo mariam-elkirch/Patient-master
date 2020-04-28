@@ -151,7 +151,7 @@ View view;
                     String className = classes.get(new Double(result).intValue());
                     String msg =  ", work predicted: " + className ;
                     Log.i("WEKA_TEST", msg);
-
+                    Self5.list.add(4,className+"work");
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

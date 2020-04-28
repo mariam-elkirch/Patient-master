@@ -152,7 +152,7 @@ View view;
                     String className = classes.get(new Double(result).intValue());
                     String msg =  ", loss predicted: " + className ;
                     Log.i("WEKA_TEST", msg);
-
+                    Self5.list.add(5,className+"loss");
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
