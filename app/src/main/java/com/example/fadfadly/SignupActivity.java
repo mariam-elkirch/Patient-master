@@ -40,7 +40,6 @@ public class SignupActivity extends BaseActivity implements View.OnClickListener
 
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,7 +60,7 @@ public class SignupActivity extends BaseActivity implements View.OnClickListener
             }
         });
     }
-    User user;
+    static User user;
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.submit) {
@@ -94,6 +93,7 @@ public class SignupActivity extends BaseActivity implements View.OnClickListener
             user.setEmail(EmailText);
             user.setAge(AgeText);
             user.setGender(gender);
+            user.setDecision("default");
 
 
             // user.setId(DataUtil.user.getUid());

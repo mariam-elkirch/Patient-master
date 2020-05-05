@@ -28,4 +28,9 @@ public class UsersDao {
                 .get()
                 .addOnCompleteListener(onSuccessListener)
                 .addOnFailureListener(onFailureListener);    }
+
+    public static void updateField(User user, String field, String value){
+        MyDataBase.getUsersReference()
+                .document(user.getId()).update(field, value);
+    }
 }

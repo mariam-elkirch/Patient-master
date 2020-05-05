@@ -7,6 +7,7 @@ public class User {
     String email;
     String age;
     String gender;
+    String decision;
 
     public String getName() {
         return name;
@@ -55,6 +56,10 @@ public class User {
     public void setGender(String gender) {
         this.gender = gender;
     }
+
+    public String getDecision() { return decision; }
+
+    public void setDecision(String decision) { this.decision = decision; }
 
     public User() {
     }

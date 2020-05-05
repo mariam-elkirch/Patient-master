@@ -9,6 +9,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.RadioGroup;
 
+import com.example.fadfadly.Database.daos.UsersDao;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -20,8 +22,12 @@ import weka.core.Attribute;
 import weka.core.DenseInstance;
 import weka.core.Instances;
 
+import static com.example.fadfadly.SignupActivity.user;
+
 public class Filtering extends AppCompatActivity {
     private Classifier mClassifier = null;
+
+    String dec;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,30 +42,36 @@ public class Filtering extends AppCompatActivity {
                switch(checkedId)
                 {
                     case R.id.sel:
-                        Self5.list.add(7,"نفسك");
+                        Self5.list.add("نفسك");
+                        dec = "نفسك" ;
                         break;
                     case R.id.second:
-                        Self5.list.add(7,"عائليا");
+                        Self5.list.add("عائليا");
+                        dec = "عائليا" ;
                         break;
                     case R.id.third:
-                        Self5.list.add(7,"الاصدقاء");
+                        Self5.list.add("الاصدقاء");
+                        dec = "الاصدقاء" ;
                         break;
                     case R.id.fourth:
-                        Self5.list.add(7,"عاطفيا");
+                        Self5.list.add("عاطفيا");
+                        dec = "عاطفيا" ;
                         break;
                     case R.id.fifth:
-                        Self5.list.add(7,"الدراسه او العمل");
+                        Self5.list.add("الدراسه او العمل");
+                        dec = "الدراسه او العمل" ;
                         break;
                     case R.id.six:
-                        Self5.list.add(7,"الفقدان");
+                        Self5.list.add("الفقدان");
+                        dec = "الفقدان" ;
                         break;
-
-
                     case R.id.seven:
-
-                        Self5.list.add(7,"الشعور العام");
+                        Self5.list.add("الشعور العام");
+                        dec = "الشعور العام" ;
                         break;
                 }
+
+                UsersDao.updateField(user, "decision" , dec);
 
                 //Do something
 
@@ -179,21 +191,13 @@ public class Filtering extends AppCompatActivity {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-            /*    Intent intent=new Intent(Filtering.this,Filtering2.class);
 
-                startActivity(intent);*/
+            startActivity(new Intent(Filtering.this,Filtering2.class));
 
             }
         });
     }
 
-    public void onfil(View view) {
-
-        Intent intent=new Intent(this,Filtering2.class);
-
-        startActivity(intent);
-
-    }
 
 
     public class Sample {
