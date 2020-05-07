@@ -7,6 +7,8 @@ import com.google.firebase.firestore.FirebaseFirestore;
 public class MyDataBase {
 
     public static final String USERS_REF = "users";
+    public static final String DOCTORS_REF = "doctors";
+
 
     private static CollectionReference getCollection(String collectionName){
         FirebaseFirestore firebaseFirestore = FirebaseFirestore.getInstance();
@@ -18,4 +20,7 @@ public class MyDataBase {
         return getCollection(USERS_REF);
     }
 
+    public static CollectionReference getDoctorsReference(){
+        return getCollection(DOCTORS_REF);
+    }
 }

@@ -186,7 +186,7 @@ public class Filtering extends AppCompatActivity {
                     String className = classes.get(new Double(result).intValue());
                     String msg = ", general predicted: " + className;
                     Log.i("WEKA_TEST", msg);
-                    Self5.list.add(6,className+"general");
+                    Self5.list.add(6,className);
 
                 } catch (Exception e) {
                     e.printStackTrace();

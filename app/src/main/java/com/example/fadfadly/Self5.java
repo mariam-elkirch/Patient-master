@@ -159,7 +159,7 @@ View view;
 
                     String msg =  ", self predicted: " + className ;
                     Log.i("WEKA_TEST", msg);
-                    list.add(0,className+"self");
+                    list.add(0,className);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
