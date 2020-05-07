@@ -94,6 +94,13 @@ public class SignupActivity extends BaseActivity implements View.OnClickListener
             user.setAge(AgeText);
             user.setGender(gender);
             user.setDecision("default");
+            user.setSelf("default");
+            user.setFamily("default");
+            user.setFriends("default");
+            user.setEmotion("default");
+            user.setWork("default");
+            user.setLoss("default");
+            user.setGeneral("deafult");
 
 
             // user.setId(DataUtil.user.getUid());
